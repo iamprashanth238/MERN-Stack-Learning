@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Day-2 Variables, Datatypes, And Operators</h1>
+    <h2>Variables</h2>
+    <p id="var-1"></p>
+    <p id="var-2"></p>
+    <p id="var-3"></p>
+    <p>Click f12 and check console to see more...!</p>
+
+    <form id="cal">
+    <h2>Operators</h2>
+
+    <p>Enter number 1</p>
+    <input type="number" id="num1">
+    <p>Enter Number 2</p>
+    <input type="number" id="num2">
+    <button type="submit">Button</button>
+    </form>
+
+    <h3>Arthimetic Operators</h3>
+    <p id="add">1 - Addition = </p>
+    <p id="sub">2 - Subtraction = </p>
+    <p id="mul">3 - Multiplication = </p>
+    <p id="div">4 - Division = </p>
+    <p id="mod">5 - Module = </p>
+
+    <form id="ass">
+    
+        <p>Enter number 1</p>
+        <input type="number" id="num1">
+        <p>Enter Number 2</p>
+        <input type="number" id="num2">
+        <button type="submit">Button</button>
+    </form>
+
+    <h3>Assignment Operators</h3>
+    <p id="equal">Equal = </p>
+    <p id="notequal"> Not Equal = </p>
+    <p id="great">Greater = </p>
+    <p id="less">Lesser = </p>
+    <p id="greaterthanequal">Greater Than equal = </p>
+    <p id="lessthanequal">Less Than equal = </p>
+
+
+    <form id="logic">
+    
+        <p>Enter number 1</p>
+        <input type="number" id="num1-logic">
+        <p>Enter Number 2</p>
+        <input type="number" id="num2-logic">
+        <button type="submit">Button</button>
+    </form>
+
+    <h3>Logical Operators</h3>
+    <p id="and">Logical AND = </p>
+    <p id="or">Logical OR = </p>
+</body>
+<script>
+    let name1 = 25;
+    var name2 = "PRashanth";
+    const name3 = "Sithamaa";
+    document.getElementById("var-1").innerText = name1;
+    document.getElementById("var-2").innerHTML = name2;
+    document.getElementById("var-3").innerHTML = name3;
+    console.log("Rama");
+    console.log("Hanuman");
+
+    let num = 25;
+    let name = "Narayamana";
+    let vote = true;
+    let age;
+    let id = Symbol(25);
+
+    let arr1 = ["Rama", "Sita maa", "Hanumaa", "Laxmana", "Ravana"];
+    let details = {
+        'names': arr1,
+        'ages' : [36, 35, 40, 32, 50],
+        'Id' : [101, 102, 103, 104, 105] 
+    };
+    console.log("Data types");
+    console.log("interger = ", num);
+    console.log("String = ", name);
+    console.log("Boolean = ", vote);
+    console.log("Age = ", age);
+    console.log("Symbol = ", id);
+    console.log("Array = ", arr1);
+    console.log("Objects = ", details);
+    
+
+    // Event listener 
+    document.getElementById("cal").addEventListener("submit", function(event){
+        event.preventDefault();
+
+        let num1 = parseFloat(document.getElementById("num1").value);
+        let num2 = parseFloat(document.getElementById("num2").value);
+
+        document.getElementById("add").innerText = "1 - Addition = " + (num1 + num2);
+        document.getElementById("sub").innerText = "2 - Subtraction = " + Math.abs(num1 - num2);
+        document.getElementById("mul").innerText = "3 - Multiplication = " + (num1 * num2);
+        document.getElementById("div").innerText = "4 - Division = " + (num1 > num2 ? num1 / num2 : num2 / num1);
+        document.getElementById("mod").innerText = "5 - Modulus = " + (num1 > num2 ? num1 % num2 : num2 % num1);
+    });
+
+    //Event Listener
+    document.getElementById("ass").addEventListener("submit", function(event1){
+        event1.preventDefault();
+        let num1 = parseFloat(document.getElementById("num1").value);
+        let num2 = parseFloat(document.getElementById("num2").value);
+
+        document.getElementById("equal").innerHTML = "Equal = " + (num1 == num2);
+        document.getElementById("notequal").innerHTML = "Not Equal = " + (num1 != num2);
+        document.getElementById("great").innerHTML = "Greater Than = " + (num1 > num2);
+        document.getElementById("less").innerHTML = "Less Than = " + (num1 < num2);
+        document.getElementById("greaterthanequal").innerHTML = "Greater Than or Equal = " + (num1 >= num2)
+        document.getElementById("lessthanequal").innerHTML = "Less Than or Equal = " + (num1 >= num2)
+    });
+
+
+    document.getElementById("logic").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        let num1 = parseFloat(document.getElementById("num1-logic").value);
+        let num2 = parseFloat(document.getElementById("num2-logic").value);
+
+        document.getElementById("and").innerText = "Logical AND = " + (num1 && num2);
+        document.getElementById("or").innerText = "Logical OR = " + (num1 || num2);
+    });
+</script>
+
+</html>
