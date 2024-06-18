@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day - 3</title>
+</head>
+<body>
+    <h1>Day - 3</h1>
+    <h2>Plan: JavaScript Control Structures</h2>
+    
+    <div id="vote">
+        <label for="userAge">Enter your Age: </label><br>
+        <input type="number" id="userAge">
+        <button type="button" id="submitID">Vote</button>
+    </div>
+
+    <h1 id="res"></h1>
+
+    <div>
+        <label for="name">Enter your name: </label><br>
+        <input type="text" id="name"><br>
+        <label for="count">How many time should display:</label><br>
+        <input type="number" id="count"><br>
+        <button type="button" id="resID">Submit</button>
+    </div>
+
+    <p id="names"></p>
+
+    <p>Same as with While loop & Do while loop</p>
+
+    <button type="button" id="times" onclick="document.getElementById('time').innerHTML = Date()">Time</button>
+    <h4 id="time"></h4>
+    <script>
+        document.getElementById("submitID").addEventListener("click", function(event){
+            let age = parseFloat(document.getElementById("userAge").value);
+
+            document.getElementById("res").innerHTML = (age >= 18? "You are eligible to vote..!" : "You are Not Eligible for Vote..!");
+        });
+
+        document.getElementById("resID").addEventListener("click", function(event){
+            let name = document.getElementById("name").value;
+            let count = parseInt(document.getElementById('count').value);
+            let names = "";
+            for(let i=0;i<count;i++){
+                names += name + "<br>";
+            }
+            document.getElementById("names").innerHTML = names;
+        });
+    </script>
+</body>
+</html>
