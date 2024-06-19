@@ -1,5 +1,7 @@
 # MERN-Stack-Learning
-My journey of learning the MERN stack from scratch
+My journey of learning the MERN stack from scratch. I know this is very late but I have been lazy to learn any technology. But I have decided to learn any technology for the next 90 days. However, I am interested in AI & ML, because the amount of time is less to learn this. After all, placement is gone start in a couple of months. I will focus on ML in my master's. 
+
+Wish me Best😊
 
 **Day 1:** 
 - Introduction to MERN Stack and Development Environment Setup
