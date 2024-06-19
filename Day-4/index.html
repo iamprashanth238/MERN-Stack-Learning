@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day - 4</title>
+</head>
+
+<body>
+    <h1>Day - 4 : Functions and Scope</h1>
+    <h3>Functions</h3>
+    <ul>
+        <li>Function Decleration</li>
+        <li>Fucntion expression</li>
+        <li>Arrow Fucntion</li>
+        <li>Parameters and Arguments</li>
+        <li>Return Values</li>
+    </ul>
+    <p>Check Out the console in the developer tool</p>
+    <label for="name">Enter your name: </label>
+    <input type="text" id="name">
+    <button type="button" id="grretBut">Greet</button>
+    <h4 id="res"></h4>
+</body>
+<script>
+    let name = document.getElementById("name").value;
+    function greet(name) {
+        return (document.getElementById("res").innerHTML = "Hello, Good morning " + name + "...!");
+    }
+
+    document.getElementById('grretBut').addEventListener("click", function (event) {
+        let name = document.getElementById("name").value;
+        greet(name);
+    });
+
+    function sum(x, y){
+        return (x + y);
+    }
+
+    let x = 26;
+    let y = 75;
+    console.log(sum(x, y));
+
+    function fib(n){
+        if (n<=0) return 0;
+        if (n === 1) return 1;
+        return fib(n-1) + fib(n-2);
+    }
+
+    let n = 10;
+    console.log(fib(n));
+
+    console.log("Arrow function");
+    let myfun = () => { return "Hello World"};
+    console.log(myfun)
+</script>
+
+</html>
