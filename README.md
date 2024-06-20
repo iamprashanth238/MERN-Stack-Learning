@@ -13,4 +13,7 @@ My journey of learning the MERN stack from scratch
 **Day 4:**
 - Functions & Scopes
 
+**Day 5:**
+- Advanced Functions and Scope
+
 
