@@ -18,4 +18,7 @@ Wish me Best😊
 **Day 5:**
 - Advanced Functions and Scope
 
+**Day 6:**
+- Arrays & Objects
+
 
