@@ -21,4 +21,17 @@ Wish me Best😊
 **Day 6:**
 - Arrays & Objects
 
+**Day - 7:**
+- Intro to NodeJS
+- Create Server 
+- Created modules 
 
+**Day - 8:**
+- Node JS Built-In modules
+- File System
+- Path
+- OS
+
+**Day - 9:**
+- HTTP modules
+- Create a simple server and created a small page.
